@@ -12,16 +12,20 @@ __doc__        = "Terminal app running on a NVIDIA Jetson Nano to control a tabl
 
 ## Standard library
 # Allow program to extract filename of the current file
-
 import sys, os.path
-v2020 = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-sys.path.append(v2020)
+v2024_0 = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+sys.path.append(v2024_0)
 
 # Allow program to pause operation and create local timestamps
 from builtins import ImportError, len, NameError
 from time import sleep
 
+
 ## 3rd party libraries
+# Allow control of output devices such as Motors, Servos, LEDs, and Relays
+# https://gpiozero.readthedocs.io/en/stable/installing.html
+from gpiozero import Motor, Servo, LED, Energenie, OutputDevice, AngularServo
+
 # Allow control of input devices such as Buttons
 from gpiozero import Button
 
@@ -34,9 +38,6 @@ from gpiozero.tools import all_values, negated, sin_values
 # Useful for controlling devices based on date and time
 from gpiozero import TimeOfDay
 
-# Allow control of output devices such as Motors, Servos, LEDs, and Relays
-from gpiozero import Motor, Servo, LED, Energenie, OutputDevice, AngularServo
-
 # Allow 'dependency-free' playback of .wav audio on Linux, MacOS, & Windows
 # https://simpleaudio.readthedocs.io/en/latest/
 import simpleaudio as sa
@@ -44,3 +45,5 @@ import simpleaudio as sa
 
 if __name__ == "__main__":
 	print("https://github.com/ROBO-BEV/Tapomatic/blob/master/v2020.0/Actuator/Actuator.py")
+	print("https://samplefocus.com/categories/noise?min_tempo=0&max_tempo=200&sort_by=Popular")
+	print("https://pixabay.com/sound-effects/search/reload/")
