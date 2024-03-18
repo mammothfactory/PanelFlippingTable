@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """
-__authors__    = ["Blaze Sanders", "Vladyslav Haverdovskyi"]
-__contact__    = "blazes@mfc.us"
-__copyright__  = "Copyright 2023"
+__authors__    = ["Blaze Sanders"]
+__contact__    = "blaze.d.a.sanders@gmail.com"
+__copyright__  = "Copyright 2024"
 __license__    = "MIT License"
 __status__     = "Development"
-__deprecated__ = False
+__deprecated__ = "False"
 __version__    = "0.0.1"
 __doc__        = "Terminal app running on a NVIDIA Jetson Nano to control a table for flipping 2000 lbs house walls (panels)"
 """
