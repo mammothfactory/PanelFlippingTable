@@ -7,7 +7,7 @@ __license__    = "MIT License"
 __status__     = "Development"
 __deprecated__ = "False"
 __version__    = "0.0.1"
-__doc__        = "Terminal app running on a NVIDIA Jetson Nano to control a table for flipping 2000 lbs house walls (panels)"
+__doc__        = "Terminal app running on a NVIDIA Jetson Nano or AGX Orin to control a table for flipping 2000 lbs house walls (panels)"
 """
 
 ## Standard library
@@ -39,7 +39,10 @@ from gpiozero.tools import all_values, negated, sin_values
 from gpiozero import TimeOfDay
 
 # Allow 'dependency-free' playback of .wav audio on Linux, MacOS, & Windows
+# pip3 install simpleaudio
+# sudo apt-get install -y python3-dev libasound2-dev
 # https://simpleaudio.readthedocs.io/en/latest/
+
 import simpleaudio as sa
 
 
